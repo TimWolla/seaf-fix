@@ -1,0 +1,16 @@
+name:                seaf-fix
+version:             0.1.0.0
+license:             MIT
+author:              Tim Düsterhus
+maintainer:          tim@bastelstu.be
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable seaf-fix
+  main-is:             seaf-fix.hs
+  
+  ghc-options: -O3
+  ld-options: -static -optl-static -pthread
+
+  -- other-modules:       
+  build-depends:       base ==4.8.*, hex, bytestring, binary ==0.7.*, cryptohash, aeson, zlib, directory, transformers, vector, split, memoize, io-memoize, containers, text
